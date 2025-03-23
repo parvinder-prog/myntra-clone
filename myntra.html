@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store- Myntra</title>
+    <link rel="stylesheet" href="myntra.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <img src="myntra.png" alt="myntra-logo-img" class="myntra-logo-img">
+
+                <div class="collections">
+                    <ul id="menuList">
+                        <li><a href="#">MEN</a></li>
+                        <li><a href="#">WOMEN</li>
+                        <li><a href="#">KIDS</a></li>
+                        <li><a href="#">HOME <span id="invisible"> & LIVING</span></a></li>
+                        <li><a href="#">BEAUTY</a></li>
+                        <li><a href="#" id="invisible">STUDIO<sup class="new">NEW</a></sup></li>
+                    </ul>
+                    <img src="menus.png" alt="menu-icon" id="invisible" onclick="toggleMenu()">
+                </div>
+
+                <div class="input">
+                    <img src="myntra search icon.png" alt="search-icon">
+                    <input type="text" placeholder="Search for products brands and more">
+                </div>
+
+                <div class="nav-right-container">
+                    <div class="nav-item">
+                        <img src="user.png" alt="Profile">
+                        <span class="hide" id="invisible">Profile</span>
+                    </div>
+                    <div class="nav-item">
+                        <img src="wishlist.png" alt="Wishlist">
+                        <span class="hide" id="invisible">Wishlist</span>
+                    </div>
+                    <div class="nav-item">
+                        <img src="shopping-bag.png" alt="Bag">
+                        <span class="hide" id="invisible">Bag</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="home-page">
+            <a id="arrow" href="#" class="control_prev">&#8592</a>
+            <a id="arrow" href="#" class="control_next">&#8594</a>
+            <ul>
+                <img src="homepage-img1.png" class="home-img" alt="img1">
+                <img src="homepage-img2.png" class="home-img" alt="img2">
+                <img src="homepage-img3.png" class="home-img" alt="img3">
+            </ul>
+        </div>
+    </section>
+
+    <!-- -----------------section 2 -------------------------- -->
+
+    <section>
+        <!-- ---------------------worthy section container-------------------- -->
+        <div class="worthy-brand-section">
+            <h1>MEDAL WORTHY BRANDS </h1>
+            <!-- --------------- worthy container insides multiple child divs -------------------- -->
+            <div class="worthy-brand-section-imgs">
+                <!-- -------------- worthy child 1 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img-1).png" alt="">
+                    <p class="worthy-image-heading">REFINED KIDS WEAR</p>
+                    <p class="worthy-image-subheading hide">MIN. 50% OFF</p>
+                </div>
+                <!-- -------------- worthy child 2 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img-2).png" alt="">
+                    <p class="worthy-image-heading"> TRENDING TECH PAIR</p>
+                    <p class="worthy-image-subheading hide">STARTING <s> ₹ 3999</s> ₹ 1799 </p>
+                </div>
+                <!-- -------------- worthy child 3 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img-3).png" alt="">
+                    <p class="worthy-image-heading">COUPLE EYEWEAR EDIT</p>
+                    <p class="worthy-image-subheading hide">MIN. 60% OFF</p>
+                </div>
+                <!-- -------------- worthy child 4 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img4).png" alt="">
+                    <p class="worthy-image-heading">HIS & HER SHADES</p>
+                    <p class="worthy-image-subheading hide">STARTING ₹ 350 </p>
+                </div>
+                <!-- -------------- worthy child 5 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img5).png" alt="">
+                    <p class="worthy-image-heading">STATEMENT PICKS</p>
+                    <p class="worthy-image-subheading hide">MIN. 50% OFF</p>
+                </div>
+                <!-- -------------- worthy child 6 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img6).png" alt="">
+                    <p class="worthy-image-heading">PARTY READY FOOTWEAR</p>
+                    <p class="worthy-image-subheading hide">MIN. 45%</p>
+                </div>
+                <!-- -------------- worthy child 7 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img7).png" alt="">
+                    <p class="worthy-image-heading">INTERNATIONAL STYLES</p>
+                    <p class="worthy-image-subheading hide">MIN. 40% OFF</p>
+                </div>
+                <!-- -------------- worthy child 8 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img8).png" alt="">
+                    <p class="worthy-image-heading">DAILY CASUALS</p>
+                    <p class="worthy-image-subheading hide">MIN. 65% OFF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------- section 3 -------------------------- -->
+    <section>
+        <div class="cool-deals">
+            <video autoplay loop muted>
+                <source src="cool-deals-video.mp4">
+            </video>
+        </div>
+    </section>
+    <!-- -------------------- section 4-------------------------- -->
+
+
+    <div class="main-video-container">
+        <div class="video-heading">
+            <h1>Style Spotlight</h1>
+        </div>
+        <div class="videos-container">
+            <div class="videos-div-1">
+                <video autoplay loop muted>
+                    <source src="frock-girl.mp4">
+                </video>
+                <div class="card">
+                    <img src="janaysa-girl.jpeg" alt="card-img">
+                    <div class="card-text">
+                        <p class="text-heading">Janasya</p>
+                        <p><b>₹999</b><s> ₹2,898</s></p>
+                        <p class="off-text">₹1899 OFF</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos-div-2">
+                <video autoplay loop muted>
+                    <source src="chronex-girl.mp4">
+                </video>
+                <div class="card">
+                    <img src="chronex.jpeg" alt="card-img">
+                    <div class="card-text">
+                        <p class="text-heading"> Hair Chronex</p>
+                        <p><b>₹701</b><s> ₹2,599</s></p>
+                        <p class="off-text">73% OFF</p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- <div class="category-shop">
+        <img src="shop-by-category-heading.png" class="category-heading" alt="heading">
+    </div> -->
+        <script src="myntra.js"></script>
+</body>
+
+</html>
