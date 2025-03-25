@@ -118,14 +118,11 @@ input {
 
 .home-page #arrow {
     position: absolute;
-    top: 40%;
+    top: 35%;
     z-index: 1;
-    padding: 3vh 1vw;
-    background-color: var(--primary-color);
-    color: black;
     text-decoration: none;
-    font-weight: bolder;
-    font-size: 30px;
+    color: #000;
+    font-size: 100px;
     cursor: pointer;
 }
 
@@ -137,8 +134,11 @@ input {
     margin-top: 80px;
 }
 
-.worthy-brand-section h1 {
-    padding: 30px;
+.worthy-brand-section h1,
+.video-heading h1 {
+    padding: 40px;
+    font-size: 30px;
+    color: var(--nav-text-color);
 }
 
 .worthy-brand-section-imgs {
@@ -153,9 +153,6 @@ input {
 
 .worthy p {
     text-align: center;
-}
-
-.worthy p {
     margin-top: 20px;
 }
 
@@ -163,11 +160,12 @@ input {
     font-size: 22px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    color: var(--nav-text-color);
 }
 
 .worthy-image-subheading {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .cool-deals {
@@ -187,22 +185,23 @@ input {
     border: 5px solid #000;
 }
 
-.video-heading h1 {
-    font-size: 40px;
-    text-align: center;
-    padding: 30px;
-    background: linear-gradient(#f41cb2, #343434);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 10px rgba(27, 26, 26, 0.5);
-}
-
 .card {
     display: flex;
     width: 250px;
     align-items: center;
     justify-content: space-around;
     margin: 20px 100px;
+}
+
+.card-text a {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-text a:hover {
+    text-decoration: underline;
+    color: #f4ac1c;
+    ;
 }
 
 .card .text-heading {
@@ -228,11 +227,67 @@ input {
     font-size: 18px;
 }
 
-/* .category-shop .category-heading {
+.category-shop-heading .category-heading {
     width: 100vw;
     height: 20vh;
     margin-top: 20px;
-} */
+}
+.category-main{
+    margin-top: 30px;
+}
+
+.category-row-1, .category-row-2,  .category-row-3 {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+   margin-bottom: 50px;
+}
+
+.category-1, .category-2, .category-3, .category-4 {
+    position: relative;
+    width: 250px; 
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    background: #c34c2d; 
+    margin-left: 16px;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    line-height: 1.5; 
+    border-radius: 8px;
+}
+.info-heading{
+    font-size: 20px;
+}
+
+.info-discount{
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;;
+}
+
+.info-shop-now a{
+    color: var(--primary-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info-shop-now a:hover{
+ color:var(--nav-text-color) ;
+    text-decoration: underline;
+   
+}
+
 
 @media only screen and (min-width:320px) and (max-width:600px) {
     .navbar {
@@ -428,6 +483,10 @@ input {
         transform: translateY(70px);
     }
 
+    .home-page #arrow {
+        top: 30%;
+    }
+
     .worthy-brand-section-imgs img {
         width: 30vw;
     }
@@ -435,9 +494,34 @@ input {
     .hide {
         display: none;
     }
+
+    .video-heading h1 {
+        font-size: 30px;
+    }
+
+    .videos-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8vw;
+    }
+
+    .videos-container video {
+        width: 60vw;
+        margin-left: 120px;
+    }
+
+    .card {
+        width: 200px;
+        margin: 10px 200px;
+        justify-content: space-evenly;
+    }
+
+    .card img {
+        width: 10vw;
+    }
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
+@media only screen and (min-width:770px) and (max-width:1024px) {
     input {
         border-radius: 18px;
         width: 90vw;
@@ -485,7 +569,40 @@ input {
         transform: translateY(70px);
     }
 
+    .worthy p {
+        font-size: 20px;
+    }
+
     .hide {
         display: none;
+    }
+
+    .card {
+        margin: 10px 40px;
+    }
+
+    .card img {
+        width: 6vw;
+    }
+
+    .videos-container .card {
+        padding: 4px;
+    }
+
+    .card .text-heading {
+        font-size: 16px;
+    }
+
+    .card-text p {
+        margin-bottom: 5px;
+    }
+
+    .videos-container {
+        gap: 5vw;
+        padding: 0px;
+    }
+
+    .videos-container video {
+        width: 40vw;
     }
 }
