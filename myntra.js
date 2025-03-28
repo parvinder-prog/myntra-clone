@@ -51,7 +51,3 @@ next_btn.addEventListener('click', () => {
     }
     changeSlide();  // Update the slide after the change
 });
-
-
-
-
