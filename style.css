@@ -473,6 +473,7 @@ border-radius: 8px;
         transform: translateY(40px);
         border: 1px solid var(--nav-text-color);
         border-radius: 20px;
+        background: #fff;
     }
 
     .input img {
@@ -489,7 +490,7 @@ border-radius: 8px;
     }
 
     .home-page #arrow {
-        top: 25%;
+        top: 20%;
         padding: 1vh 1vw;
         font-size: 20px;
         color: #fff;
