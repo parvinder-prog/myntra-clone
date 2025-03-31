@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store- Myntra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="myntra-file.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <img src="myntra.png" alt="myntra-logo-img" class="myntra-logo-img">
+
+                <div class="collections">
+                    <ul id="menuList">
+                        <li><a href="https://www.myntra.com/shop/men">MEN</a></li>
+                        <li><a href="https://www.myntra.com/shop/women">WOMEN</li>
+                        <li><a href="https://www.myntra.com/shop/kids">KIDS</a></li>
+                        <li><a href="https://www.myntra.com/shop/home-living">HOME <span id="invisible"> &
+                                    LIVING</span></a></li>
+                        <li><a href="https://www.myntra.com/personal-care">BEAUTY</a></li>
+                        <li><a href="https://www.myntra.com/studio/home" id="invisible">STUDIO<sup
+                                    class="new">NEW</a></sup></li>
+                    </ul>
+                    <img src="menus.png" alt="menu-icon" id="invisible" onclick="toggleMenu()">
+                </div>
+
+                <div class="input">
+                    <img src="myntra search icon.png" alt="search-icon">
+                    <input type="text" placeholder="Search for products brands and more">
+                </div>
+
+                <div class="nav-right-container">
+                    <div class="nav-item">
+                        <img src="user.png" alt="Profile">
+                        <span class="hide" id="invisible"><a href="myntra-login-page-file.html"
+                                class="nav-text">Profile</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <img src="wishlist.png" alt="Wishlist">
+                        <span class="hide" id="invisible"><a href="https://www.myntra.com/wishlist"
+                                class="nav-text">Wishlist</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <img src="shopping-bag.png" alt="Bag">
+                        <span class="hide" id="invisible"><a href="https://www.myntra.com/checkout/cart"
+                                class="nav-text">Bag</a></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="home-page">
+            <a id="arrow" href="#" class="control_prev">&#x276E</a>
+            <a id="arrow" href="#" class="control_next">&#x276F</a>
+            <ul>
+                <img src="homepage-img1.png" class="home-img" alt="img1">
+                <img src="homepage-img2.png" class="home-img" alt="img2">
+                <img src="homepage-img3.png" class="home-img" alt="img3">
+            </ul>
+        </div>
+    </section>
+
+    <!-- -----------------section 2 -------------------------- -->
+
+    <section>
+        <!-- ---------------------worthy section container-------------------- -->
+        <div class="worthy-brand-section">
+            <h1>MEDAL WORTHY BRANDS </h1>
+            <!-- --------------- worthy container insides multiple child divs -------------------- -->
+            <div class="worthy-brand-section-imgs">
+                <!-- -------------- worthy child 1 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img-1).png" alt="">
+                    <p class="worthy-image-heading">REFINED KIDS WEAR</p>
+                    <p class="worthy-image-subheading hide">MIN. 50% OFF</p>
+                </div>
+                <!-- -------------- worthy child 2 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img-2).png" alt="">
+                    <p class="worthy-image-heading"> TRENDING TECH PAIR</p>
+                    <p class="worthy-image-subheading hide">STARTING <s> ₹ 3999</s> ₹ 1799 </p>
+                </div>
+                <!-- -------------- worthy child 3 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img-3).png" alt="">
+                    <p class="worthy-image-heading">COUPLE EYEWEAR EDIT</p>
+                    <p class="worthy-image-subheading hide">MIN. 60% OFF</p>
+                </div>
+                <!-- -------------- worthy child 4 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img4).png" alt="">
+                    <p class="worthy-image-heading">HIS & HER SHADES</p>
+                    <p class="worthy-image-subheading hide">STARTING ₹ 350 </p>
+                </div>
+                <!-- -------------- worthy child 5 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img5).png" alt="">
+                    <p class="worthy-image-heading">STATEMENT PICKS</p>
+                    <p class="worthy-image-subheading hide">MIN. 50% OFF</p>
+                </div>
+                <!-- -------------- worthy child 6 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img6).png" alt="">
+                    <p class="worthy-image-heading">PARTY READY FOOTWEAR</p>
+                    <p class="worthy-image-subheading hide">MIN. 45%</p>
+                </div>
+                <!-- -------------- worthy child 7 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img7).png" alt="">
+                    <p class="worthy-image-heading">INTERNATIONAL STYLES</p>
+                    <p class="worthy-image-subheading hide">MIN. 40% OFF</p>
+                </div>
+                <!-- -------------- worthy child 8 div---------- -->
+                <div class="worthy">
+                    <img src="section3(img8).png" alt="">
+                    <p class="worthy-image-heading">DAILY CASUALS</p>
+                    <p class="worthy-image-subheading hide">MIN. 65% OFF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------- cool-video-section -------------------------- -->
+    <section>
+        <div class="cool-deals">
+            <video autoplay loop muted>
+                <source src="cool-deals-video.mp4">
+            </video>
+        </div>
+    </section>
+    <!-- -------------------- style spotlight section-------------------------- -->
+
+    <section>
+        <div class="main-video-container">
+            <div class="video-heading">
+                <h1>STYLE SPOTLIGHT</h1>
+            </div>
+            <div class="videos-container">
+                <div class="videos-div-1">
+                    <video autoplay loop muted>
+                        <source src="frock-girl.mp4">
+                    </video>
+                    <div class="card">
+                        <img src="janaysa-girl.jpeg" alt="card-img">
+                        <div class="card-text">
+                            <p class="text-heading"><a
+                                    href="https://www.myntra.com/janasaya-dresses?rawQuery=janasaya%20dresses">Janasya</a>
+                            </p>
+                            <p><b>₹999</b><s> ₹2,898</s></p>
+                            <p class="off-text">₹1899 OFF</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videos-div-2">
+                    <video autoplay loop muted>
+                        <source src="chronex-girl.mp4">
+                    </video>
+                    <div class="card">
+                        <img src="chronex.jpeg" alt="card-img">
+                        <div class="card-text">
+                            <p class="text-heading"><a
+                                    href="https://www.myntra.com/tinsels-for-hairs?rawQuery=tinsels%20for%20hairs">Tinsels
+                                    For Hairs </a></p>
+                            <p><b>₹701</b><s> ₹2,599</s></p>
+                            <p class="off-text">73% OFF</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- --------------------- shop by category section------------------------ -->
+    <div class="category-shop-heading">
+        <img src="shop-by-category-heading.png" class="category-heading" alt="heading">
+    </div>
+
+    <div class="category-main">
+        <div class="category-row-1">
+            <div class="category-1">
+                <img src="category-img-1.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Ethnic Wear</p>
+                    <p class="info-discount hide">50-80% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+
+            <div class="category-2">
+                <img src="category-img-2.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Activewear </p>
+                    <p class="info-discount hide"> 30-70% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+
+            <div class="category-3">
+                <img src="category-img-3.png" alt="">
+                <div class="info">
+                    <p class="info-heading">An Teddy </p>
+                    <p class="info-discount hide"> (45% OFF)</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+
+            <div class="category-4">
+                <img src="category-img-4.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Womens Western </p>
+                    <p class="info-discount hide"> ₹923</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+        </div> <!-- category-row-1 div closing -->
+
+
+        <!-----------------------------category-row-2----------------------- -->
+
+        <div class="category-row-2">
+            <div class="category-1 hide">
+                <img src="img1-3.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Watches & Wearables</p>
+                    <p class="info-discount hide">UPTO 80% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+
+            <div class="category-2">
+                <img src="home-decor-img.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Home Decor </p>
+                    <p class="info-discount hide"> 30-70% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+
+            <div class="category-3">
+                <img src="kids-wears.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Kids Wear </p>
+                    <p class="info-discount hide"> 80% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+        </div> <!-- category-row-2 div closing -->
+
+        <!-- -------------------------category-row-3-------------------- -->
+        <div class="category-row-3">
+            <div class="category-1">
+                <img src="img2-3.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Ethnic Wear</p>
+                    <p class="info-discount hide">50-80% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+
+            <div class="category-2">
+                <img src="mens-formals.png" alt="">
+                <div class="info">
+                    <p class="info-heading">Mens Formal </p>
+                    <p class="info-discount hide"> 50% OFF</p>
+                    <p class="info-shop-now"><a href="">Shop Now</a></p>
+                </div>
+            </div>
+        </div> <!-- category-row-3 div closing -->
+    </div> <!-- category-main div closing -->
+
+    <!-- ----- downloading myntra app ----- -->
+    <div class="download-container">
+        <div class="download-section">
+            <p class="download-heading hide">Experience Myntra App on Mobile</p>
+            <div class="apps-imgs hide">
+                <img src="google-play.jpg" alt="playstore-img">
+                <img src="app-store.jpg" alt="apple-users-img">
+            </div>
+        </div>
+
+        <div class="social-media">
+            <p class="social-heading">KEEP IN TOUCH</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/myntra" class="social-link facebook" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/myntra/#" class="social-link instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.youtube.com/user/myntradotcom" class="social-link youtube" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                        <a href="https://x.com/myntra" class="social-link twitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-------------------------2nd footer---------------------- -->
+    <footer>
+        <div class="footer1">
+            <div class="col-1">
+                <div class="div1">
+                    <p>Online Shopping</p>
+                    <a href="">Men</a>
+                    <a href="">Women</a>
+                    <a href="">Kids</a>
+                    <a href="">Beauty</a>
+                    <a href="">Genz</a>
+                </div>
+
+                <div class="div2 hide">
+                    <p>Useful Links</p>
+                    <a href="">Blogs</a>
+                    <a href="">Carriers</a>
+                    <a href="">Site map</a>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="div3">
+                    <p>Customer Policies</p>
+                    <a href="">Contact Us</a>
+                    <a href="">FAQ</a>
+                    <a href="">Returns</a>
+                    <a href="">Terms of use</a>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="div4">
+                    <p>Privacy policy</p>
+                    <a href="">Returns</a>
+                    <a href="">Shipping</a>
+                    <a href="">Shipping</a>
+                    <a href="">Cancellation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ---- footer 2--- -->
+    <footer>
+        <div class="footer2">
+            <p class="popular">POPULAR SEARCHERS</p>
+            <p class="content">Makeup | Dress for girls | T-shirts | Sandals | Headphones | Wallets | Tops | Jeans |
+                Western Dreses | Suit | <br><br> Googles | Jewellery | Designers Sarees | Watches | Adidas shoes | kids
+                collections | Rings |<br><br> Dresses | Forever 21 | Eargings | Kutis | Nikes | Boxers | Reebok | Myntra
+                Fashion Shows </p>
+        </div>
+    </footer>
+
+    <footer class="footer3">
+        <div class="history">
+            <p class="history-heading">HISTORY OF MYNTRA</p>
+            <p class="history-content">
+                Becoming India's no. 1 fashion destination is not an easy feat. Sincere efforts, digital enhancements
+                and a team of dedicated personnel with an <br>equally loyal customer base have made Myntra the online
+                platform that it is today. The original B2B venture for personalized gifts was conceived in 2007 but
+                transitioned into a full-fledged ecommerce giant within a span of just a few years. By 2012, Myntra had
+                introduced 350 Indian and international brands to its platform, and this has only grown in number each
+                passing year. Today Myntra sits on top of the online fashion game with<br> an astounding social media
+                following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.
+                The Myntra shopping app came into existence in the year 2015 to further encourage customers' shopping
+                sprees. Download the app on your Android or IOS device this very minute to experience fashion like never
+                before
+            </p>
+        </div>
+    </footer>
+    <script src="myntra-file.js"></script>
+</body>
+
+</html>

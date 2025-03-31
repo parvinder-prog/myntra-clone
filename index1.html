@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra-login-page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fcefe6;
+            font-family: Verdana, Tahoma, sans-serif;
+            overflow-x: hidden;
+        }
+
+        :root {
+            --primary-color: #fff;
+            --nav-box-shadow: #efefef;
+            --nav-text-color: #302f2f;
+            --nav-background-color: #727171;
+        }
+
+
+        .navbar {
+            position: sticky;
+            top: 0px;
+            width: 100vw;
+            height: 70px;
+            background: var(--primary-color);
+            box-shadow: 0px 0px 10px 10px var(--nav-box-shadow);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .collections .new {
+            color: red;
+            font-size: 10px;
+        }
+
+        .myntra-logo-img {
+            width: 50px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: var(--nav-text-color);
+        }
+
+        .collections ul {
+            display: flex;
+            list-style: none;
+            column-gap: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .collections ul li a:hover {
+            text-decoration: underline 3px solid #f41cb2;
+            transition: 0.3s ease-in-out;
+        }
+
+        input {
+            background: var(--nav-box-shadow);
+            border: none;
+            border-radius: 4px;
+            width: 310px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .input img {
+            background: var(--nav-box-shadow);
+            width: 16px;
+            position: absolute;
+            right: 620px;
+            z-index: 1;
+            padding: 10px;
+        }
+
+        .nav-right-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-right-container span {
+            font-weight: bold;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .nav-item img {
+            width: 20px;
+            margin-bottom: 5px;
+        }
+
+        .collections img {
+            width: 20px;
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            display: none;
+        }
+
+        #invisible {
+            display: none;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100%;
+            background-color: #fcefe6;
+            display: grid;
+            place-items: center;
+        }
+
+        .form {
+            width: 32vw;
+            height: 60vh;
+            place-items: center;
+            background-color: #ffffff;
+        }
+
+        form input {
+            width: 25vw;
+            background-color: #fff;
+            border: 1px solid #a8a9af;
+            border-radius: 5px;
+            padding: 12px;
+            margin: 10px;
+        }
+
+        ::placeholder {
+            font-size: 15px;
+        }
+
+        .text span {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .text {
+            color: #565758;
+            padding: 20px;
+            width: 26vw;
+        }
+
+        .policies-text {
+            font-size: 14px;
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .policies-text p,
+        .ampersand {
+            color: #565758;
+        }
+
+        .terms {
+            color: #ff3f6c;
+        }
+
+        .continue-btn {
+            background-color: #ff3f6c;
+            width: 28vw;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .last-text {
+            font-size: 13px;
+            width: 26vw;
+        }
+
+        .last-text a {
+            text-decoration: none;
+            color: #ff3f6c;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .trouble-text {
+            color: #565758;
+            font-size: 12px;
+        }
+
+        #errorMessage {
+            color: red;
+            font-size: 12px;
+            width: 25vw;
+            display: none;
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:600px) {
+            .navbar {
+                display: none;
+            }
+
+            .container {
+                margin-top: 10vh;
+            }
+
+            .container img {
+                width: 100vw;
+            }
+
+            .form {
+                width: 100vw;
+            }
+
+            .text {
+                display: flex;
+                gap: 8px;
+                width: 90vw;
+            }
+
+            form input {
+                width: 75vw;
+                padding: 10px;
+            }
+
+            .policies-text {
+                font-size: 12px;
+            }
+
+            .continue-btn {
+                width: 75vw;
+            }
+
+            .last-text {
+                width: 70vw;
+            }
+
+            #errorMessage {
+                width: 85vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="myntra.png" alt="myntra-logo-img" class="myntra-logo-img">
+
+        <div class="collections">
+            <ul id="menuList">
+                <li><a href="https://www.myntra.com/shop/men">MEN</a></li>
+                <li><a href="https://www.myntra.com/shop/women">WOMEN</li>
+                <li><a href="https://www.myntra.com/shop/kids">KIDS</a></li>
+                <li><a href="https://www.myntra.com/shop/home-living">HOME LIVING</a></li>
+                <li><a href="https://www.myntra.com/personal-care" id="invisible">BEAUTY</a></li>
+                <li><a href="https://www.myntra.com/studio/home">STUDIO<sup class="new">NEW</a></sup>
+                </li>
+            </ul>
+        </div>
+
+        <div class="input">
+            <img src="myntra search icon.png" alt="search-icon">
+            <input type="text" placeholder="Search for products brands and more">
+        </div>
+
+        <div class="nav-right-container">
+            <div class="nav-item">
+                <img src="wishlist.png" alt="Wishlist">
+                <span class="hide">Wishlist</span>
+            </div>
+            <div class="nav-item">
+                <img src="shopping-bag.png" alt="Bag">
+                <span class="hide">Bag</span>
+            </div>
+        </div>
+    </div>
+    </nav>
+    </header>
+
+    <!-- ----------------------------form---------------------- -->
+    <form>
+        <div class="container">
+            <img src="myntra-login-img.png" alt="myntra-logo-img">
+            <div class="form">
+                <div class="text">
+                    <span>Login </span>or<span>Signup</span>
+                </div>
+                <input type="text" placeholder="+91 | Mobile Number*" id="mobile">
+                <p id="errorMessage">Please enter a valid mobile number (10 digits)</p>
+
+                <div class="policies-text">
+                    <p>By continuing, I agree to the</p>
+                    <span class="terms">Terms of Use </span>
+                    <span class="ampersand"> & </span>
+                    <span class="terms">Privacy Policy</span>
+                </div>
+                <button class="continue-btn" id="continueBtn">CONTINUE</button>
+
+                <div class="last-text">
+                    <span class="trouble-text">Have trouble logging in? </span><span><a>Get Help</a></span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        document.getElementById("continueBtn").addEventListener("click", function () {
+            let mobileInput = document.getElementById("mobile").value.trim();
+            let errorMessage = document.getElementById("errorMessage");
+
+            if (mobileInput.length !== 10 || isNAN(mobileInput)) {
+                errorMessage.style.display = "block";
+            }
+            else {
+                errorMessage.style.display = "none";
+                alert("Proceeding....");
+            }
+        });
+    </script>
+</body>
+
+</html>
