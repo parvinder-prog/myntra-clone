@@ -633,18 +633,15 @@ img {
         font-size: 12px;
     }
 
-    .footer1 p,
-    .footer2 .popular,
-    .footer3 .history-heading {
+ .footer1 p, .footer2 .popular, .footer3 .history-heading {
         font-size: 14px;
     }
-
+    
     .footer2 p,
     .footer3 p {
         padding-left: 10vw;
     }
 }
-
 
 @media only screen and (min-width:601px) and (max-width:770px) {
     input {
